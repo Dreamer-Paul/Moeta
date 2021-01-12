@@ -4,9 +4,9 @@
 
 # Moeta
 # By: Dreamer-Paul
-# Last Update: 2018.8.26
+# Last Update: 2021.1.22
 
-薰子我最爱！！！！
+萌田薰子的角色介绍页
 
 本代码为奇趣保罗原创，并遵守 MIT 开源协议。欢迎访问我的博客：https://paugram.com
 
@@ -20,29 +20,56 @@ body{
     color: #fff;
     float: right;
     padding: 1.5em;
+    max-width: 35em;
     background: url(bg.jpg) center center/cover fixed no-repeat;
 }
 header{
     text-align: right;
     margin-bottom: 1em;
 }
-header h1{
+header .moeta-name{
     padding: 1rem;
+    text-align: center;
     display: inline-block;
     background: rgba(0, 0, 0, .5);
 }
+
+.moeta-name h1{
+    margin-bottom: 0;
+}
+.moeta-name p{
+    opacity: .6;
+    font-size: .875em;
+}
+
 main{
     padding: 1.5em;
-    max-width: 400px;
     margin-bottom: 2em;
     background: rgba(0, 0, 0, .5);
 }
 
-@media screen and (min-width: 1024px){
-    main{ max-width: 600px }
+@media screen and (max-width: 768px){
+    body{
+        float: none;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    header{
+        display: flex;
+        align-items: flex-end;
+        height: 100vh;
+        
+    }
+    header .moeta-name{
+        padding: 2em 3em;
+    }
 }
 
-main h2{ position: relative }
+main h2{
+    position: relative;
+    margin-top: 3em;
+}
 main h2:before{
     content: '';
     height: 100%;
@@ -50,6 +77,10 @@ main h2:before{
     left: -1.5rem;
     background: #ffc1cc;
     position: absolute;
+}
+
+main h2:first-child{
+    margin-top: 0;
 }
 
 footer{
