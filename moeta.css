@@ -4,13 +4,15 @@
 
 # Moeta
 # By: Dreamer-Paul
-# Last Update: 2021.1.22
+# Last Update: 2021.1.13
 
 萌田薰子的角色介绍页
 
 本代码为奇趣保罗原创，并遵守 MIT 开源协议。欢迎访问我的博客：https://paugram.com
 
 ---- */
+
+html, body{ height: 100% }
 
 a{ color: #ffc1cc }
 
@@ -58,7 +60,7 @@ main{
     header{
         display: flex;
         align-items: flex-end;
-        height: 100vh;
+        height: 100%;
         
     }
     header .moeta-name{
@@ -84,7 +86,7 @@ main h2:first-child{
 }
 
 footer{
-    padding: 1em 0;
+    padding: 1em;
     text-align: center;
     background: rgba(0, 0, 0, .6);
 }
